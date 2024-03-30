@@ -157,7 +157,9 @@ $$
 $$
 
 ## Diskrete Verteilungen
+
 ### Diskrete Gleichverteilung
+
 * Definition: X heißt diskret gleichverteilt, in Zeichen $X ~D_{m}$, wenn
 
 $$
