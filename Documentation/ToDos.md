@@ -124,12 +124,14 @@ Man kann $P(H_{i})$ auch als Wahrscheinlichkeit vor und $P(H_{i}|A)$ als Wahrsch
 ## Erwartungswert und Varianz
 
 * Definition: Ist X eine Zufallsgröße des Wahrscheinlichkeitsmodelles mit Grundraum $M_{X}$ und Wahrscheinlichkeitsverteilung $P$, so heißt
+
 $$
 \mu = \langle X\rangle = \sum_{x\in M_{X}}xP(x)
 $$
 der Erwartungswert von X.
 
 * Definition: Ist X eine Zufallsgröße des Wahrscheinlichkeitsmodelles mit Grundraum $M_{X}$ und Wahrscheinlichkeitsverteilung P, so heißt
+
 $$
 \sigma_{X}^2 = VX=\sum_{x\in M_{X}}P(x)(x-\mu)^2
 $$
