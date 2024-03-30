@@ -164,7 +164,7 @@ $$
 * Definition: X heißt diskret gleichverteilt, in Zeichen $X ~D_{m}$, wenn
 
 $$
-M_{X} = \{1,...,m \}\quad \tect{und}\quad P(x)=\frac{1}{m}\quad\forall x\in M_{X}
+M_{X} = \{1,...,m \}\quad \text{und}\quad P(x)=\frac{1}{m}\quad\forall x\in M_{X}
 $$
 
 Dann gilt:
