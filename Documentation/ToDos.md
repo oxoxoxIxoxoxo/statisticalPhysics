@@ -60,7 +60,7 @@
 
 * Zuordnung der Wahrscheinlichkeiten zu den einzelnen Elementen: Wahrscheinlichkeitsfunktion $P:\Omega \Rightarrow [0,1]$
 
-* Forderung an die Wahrscheinlichkeitsfunktion: $\sum_{\omega\in\Omega}P(\omega) = 1
+* Forderung an die Wahrscheinlichkeitsfunktion: $\sum_{\omega\in\Omega}P(\omega) = 1$
 
 * Der Begriff der Wahrscheinlichkeit kann als empirisches Gesetz der großen Zahlen gedeutet werden, in dem sich ein bestimmter "Häufungswert" ermitteln lässt.
 
