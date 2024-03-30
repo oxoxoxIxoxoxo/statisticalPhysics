@@ -98,12 +98,14 @@ was der klassischen Definition von "Anzahl der günstigen Ereignisse durch Anzah
 Für das Eintreten eines Ereignisses A wird das Eintreten eines Ereignisses B als Voraussetzung angenommen. Es sind dann nur noch jene Ausgänge günstig, die sowohl in A als auch in B enthalten sind.
 
 Ist B die Bedingung des Ereignisses A, so gilt für die bedingte Wahrscheinlichkeit $P(A|B)$, in Worten "P von A unter der Bedingung B":
+
 $$
 P(A|B) = \frac{P(A\cap B)}{P(B)}
 $$
 
 * Multiplikationstheorem:
 Seien A und B, $A,B\subset\Omega$, zwei nicht notwendig unabhängige Ereignisse, so gilt:
+
 $$
 P(A\cap B)=P(A)\cdot P(B|A)=P(B)\cdot P(A|B)
 $$
@@ -113,7 +115,10 @@ Zwei Ereignisse A und B heißen voneinander unabhängig, wenn $P(A|B) = P(A)$ gi
 
 * Satz von Bayes:
 Bilden $H_{1}, H_{2}, ..., H_{n}$ gemeinsam die ganze Grundmenge $\Omega$, ohne zu überlappen und ist $A\subset\Omega$ ein beliebiges Ereignis, so gilt:
-$$ P(H_{i}|A)=\frac{P(H_{i})P(A|H_{i})}{\Sum_{j=1}^{n}P(H_{i})P(A|H_{i})} $$
+
+$$
+P(H_{i}|A)=\frac{P(H_{i})P(A|H_{i})}{\Sum_{j=1}^{n}P(H_{i})P(A|H_{i})}
+$$
 
 Man kann $P(H_{i})$ auch als Wahrscheinlichkeit vor und $P(H_{i}|A)$ als Wahrscheinlichkeit nach einer Beobachtung verstehen und spricht daher auch von a-priori und a-posteriori Wahrscheinlichkeiten.
 
