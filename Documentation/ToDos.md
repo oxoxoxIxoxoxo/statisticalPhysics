@@ -151,6 +151,7 @@ $$
 * Berechnung des Erwartungswertes:
 
 Ist $f:\mathbb{R}\rightarrow\mathbb{R}$ und $X$ eine Zufallsgröße des Wahrscheinlichkeitsmodelles mit Grundraum $M_{X}$ und Wahrscheinlichkeitsverteilung P, dann ist
+
 $$
 \langle f(X)\rangle = \sum_{x\in M_{X}}f(x)P(x)
 $$
@@ -158,10 +159,12 @@ $$
 ## Diskrete Verteilungen
 ### Diskrete Gleichverteilung
 * Definition: X heißt diskret gleichverteilt, in Zeichen $X ~D_{m}$, wenn
+
 $$
 M_{X} = \{1,...,m \}\quad \tect{und}\quad P(x)=\frac{1}{m}\quad\forall x\in M_{X}
 $$
 Dann gilt:
+
 $$
 \langle X\rangle = \frac{m+1}{2},\quad VX=\frac{m^2-1}{12}
 $$
@@ -170,10 +173,12 @@ Anwendungen: Würfel, Zufallszahlen, Roulette, usw
 ### Alternativverteilung
 
 * Definition: X heißt alternativverteilt, i.Z. XÃ_{\vartheta}, wenn
+
 $$
 M_{X}=\{0,1 \}\quad\text{und}\quad P(1)=\vartheta,\quad P(0)=1-\vartheta
 $$
 Dann gilt:
+
 $$
 \langle X\rangle = \vartheta,\quad VX=\vartheta(1-\vartheta)
 $$
@@ -182,10 +187,12 @@ Anwendungen, Münzwurf, Gut-Schlecht-Prüfungen, usw.
 ### Binomialverteilung
 
 * Definition: X heißt binomialverteilt, i.Z. $X~B_{n,\vartheta}$, wenn
+
 $$
 M_{X}=\{0,1,...,n \}\quad\text{und}\quad P(x)=\binom{n}{x}\vartheta^x(1-\vartheta)^{n-x}
 $$
 Dann gilt:
+
 $$
 \langle X\rangle n\vartheta,\quad VX=n\vartheta(1-\vartheta)
 $$
@@ -194,10 +201,12 @@ Anwendungen: Die Binomialverteilung kann als die Verteilung des Ziehens mit Zur�
 ### Hypergeometrische Verteilung
 
 * Definition: X heißt hypergeometrisch verteilt, i.Z. $X~H_{N,A,n}$, wenn
+
 $$
 M_{X}=\{k_{0},k_{0}+1,...,k_{1} \}\quad\text{und}\quad P(x)=\frac{\binom{A}{x}\binom{N-A}{n-x}}{\binom{N}{n}}
 $$
 wobei $k_{0}=max\{0,n-N+A\}$ und $k_{1} = min\{n,A \}$. Dann gilt
+
 $$
 \langle X\rangle = n\frac{A}{N},\quad VX=n\frac{A}{N}\big(1-\frac{A}{N} \big)\frac{N-n}{N-1}
 $$
@@ -205,10 +214,12 @@ $$
 ### Poissonverteilung
 
 * Definition: X heißt poissonverteilt, i.Z. $X~P_{\lambda}$, wenn
+
 $$
 M_{X} = \{0, 1, 2, 3, ... \}\quad\text{und}\quad P(x)=\frac{\lambda^x}{x!}exp(-\lambda)
 $$
 Dann gilt:
+
 $$
 \langle X\rangle = \lambda,\quad VX=\lambda
 $$
@@ -218,10 +229,12 @@ Man erhält die Poissonverteilung auchaus einer Binomialverteilung für kleine $
 ### Geometrische Verteilung
 
 * Definition: X heißt geometrische verteilt, i.Z. $X~G_{\vartheta}$, wenn
+
 $$
 M_{X} = \{1,2,3,... \}\quad\text{und}\quad P(x)=(1-\vartheta)^{x-1}\vartheta
 $$
 Dann gilt:
+
 $$
 \langle X\rangle = \frac{1}{\vartheta},\quad VX=\frac{1-\vartheta}{\vartheta^2}
 $$
