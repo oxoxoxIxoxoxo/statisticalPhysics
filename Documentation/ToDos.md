@@ -117,7 +117,7 @@ Zwei Ereignisse A und B heißen voneinander unabhängig, wenn $P(A|B) = P(A)$ gi
 Bilden $H_{1}, H_{2}, ..., H_{n}$ gemeinsam die ganze Grundmenge $\Omega$, ohne zu überlappen und ist $A\subset\Omega$ ein beliebiges Ereignis, so gilt:
 
 $$
-P(H_{i}|A)=\frac{P(H_{i})P(A|H_{i})}{\Sum_{j=1}^{n}P(H_{i})P(A|H_{i})}
+P(H_{i}|A)=\frac{P(H_{i})P(A|H_{i})}{\sum_{j=1}^{n}P(H_{i})P(A|H_{i})}
 $$
 
 Man kann $P(H_{i})$ auch als Wahrscheinlichkeit vor und $P(H_{i}|A)$ als Wahrscheinlichkeit nach einer Beobachtung verstehen und spricht daher auch von a-priori und a-posteriori Wahrscheinlichkeiten.
