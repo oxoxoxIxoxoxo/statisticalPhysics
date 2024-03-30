@@ -178,7 +178,7 @@ Anwendungen: Würfel, Zufallszahlen, Roulette, usw
 
 ### Alternativverteilung
 
-* Definition: X heißt alternativverteilt, i.Z. $X\~A_{\vartheta}$, wenn
+* Definition: X heißt alternativverteilt, i.Z. $X\sim A_{\vartheta}$, wenn
 
 $$
 M_{X}=\{0,1 \}\quad\text{und}\quad P(1)=\vartheta,\quad P(0)=1-\vartheta
@@ -194,7 +194,7 @@ Anwendungen, Münzwurf, Gut-Schlecht-Prüfungen, usw.
 
 ### Binomialverteilung
 
-* Definition: X heißt binomialverteilt, i.Z. $X\~B_{n,\vartheta}$, wenn
+* Definition: X heißt binomialverteilt, i.Z. $X\sim B_{n,\vartheta}$, wenn
 
 $$
 M_{X}=\{0,1,...,n \}\quad\text{und}\quad P(x)=\binom{n}{x}\vartheta^x(1-\vartheta)^{n-x}
@@ -210,7 +210,7 @@ Anwendungen: Die Binomialverteilung kann als die Verteilung des Ziehens mit Zur�
 
 ### Hypergeometrische Verteilung
 
-* Definition: X heißt hypergeometrisch verteilt, i.Z. $X~H_{N,A,n}$, wenn
+* Definition: X heißt hypergeometrisch verteilt, i.Z. $X\sim H_{N,A,n}$, wenn
 
 $$
 M_{X}=\{k_{0},k_{0}+1,...,k_{1} \}\quad\text{und}\quad P(x)=\frac{\binom{A}{x}\binom{N-A}{n-x}}{\binom{N}{n}}
@@ -224,7 +224,7 @@ $$
 
 ### Poissonverteilung
 
-* Definition: X heißt poissonverteilt, i.Z. $X\~P_{\lambda}$, wenn
+* Definition: X heißt poissonverteilt, i.Z. $X\sim P_{\lambda}$, wenn
 
 $$
 M_{X} = \{0, 1, 2, 3, ... \}\quad\text{und}\quad P(x)=\frac{\lambda^x}{x!}exp(-\lambda)
@@ -241,7 +241,7 @@ Man erhält die Poissonverteilung auchaus einer Binomialverteilung für kleine $
 
 ### Geometrische Verteilung
 
-* Definition: X heißt geometrische verteilt, i.Z. $X\~G_{\vartheta}$, wenn
+* Definition: X heißt geometrische verteilt, i.Z. $X\sim G_{\vartheta}$, wenn
 
 $$
 M_{X} = \{1,2,3,... \}\quad\text{und}\quad P(x)=(1-\vartheta)^{x-1}\vartheta
