@@ -165,11 +165,13 @@ $$
 $$
 M_{X} = \{1,...,m \}\quad \tect{und}\quad P(x)=\frac{1}{m}\quad\forall x\in M_{X}
 $$
+
 Dann gilt:
 
 $$
 \langle X\rangle = \frac{m+1}{2},\quad VX=\frac{m^2-1}{12}
 $$
+
 Anwendungen: Würfel, Zufallszahlen, Roulette, usw
 
 ### Alternativverteilung
@@ -179,11 +181,13 @@ Anwendungen: Würfel, Zufallszahlen, Roulette, usw
 $$
 M_{X}=\{0,1 \}\quad\text{und}\quad P(1)=\vartheta,\quad P(0)=1-\vartheta
 $$
+
 Dann gilt:
 
 $$
 \langle X\rangle = \vartheta,\quad VX=\vartheta(1-\vartheta)
 $$
+
 Anwendungen, Münzwurf, Gut-Schlecht-Prüfungen, usw.
 
 ### Binomialverteilung
@@ -193,11 +197,13 @@ Anwendungen, Münzwurf, Gut-Schlecht-Prüfungen, usw.
 $$
 M_{X}=\{0,1,...,n \}\quad\text{und}\quad P(x)=\binom{n}{x}\vartheta^x(1-\vartheta)^{n-x}
 $$
+
 Dann gilt:
 
 $$
 \langle X\rangle n\vartheta,\quad VX=n\vartheta(1-\vartheta)
 $$
+
 Anwendungen: Die Binomialverteilung kann als die Verteilung des Ziehens mit Zurücklegen angesehen werden, wobei aus einer Gesamtheit gezogen wird die sich im Verhältnis $\vartheta:1-\vartheta$ aus zwei Teilen zusammensetzt; z.B.: Anzahl von gewürfelten Sechsen, Auftreten einzelner Lottozahlen.
 
 ### Hypergeometrische Verteilung
@@ -207,6 +213,7 @@ Anwendungen: Die Binomialverteilung kann als die Verteilung des Ziehens mit Zur�
 $$
 M_{X}=\{k_{0},k_{0}+1,...,k_{1} \}\quad\text{und}\quad P(x)=\frac{\binom{A}{x}\binom{N-A}{n-x}}{\binom{N}{n}}
 $$
+
 wobei $k_{0}=max\{0,n-N+A\}$ und $k_{1} = min\{n,A \}$. Dann gilt
 
 $$
@@ -220,11 +227,13 @@ $$
 $$
 M_{X} = \{0, 1, 2, 3, ... \}\quad\text{und}\quad P(x)=\frac{\lambda^x}{x!}exp(-\lambda)
 $$
+
 Dann gilt:
 
 $$
 \langle X\rangle = \lambda,\quad VX=\lambda
 $$
+
 Zur Verdeutlichung des Parameters $\lambda$:
 Man erhält die Poissonverteilung auchaus einer Binomialverteilung für kleine $\vartheta$ und große n. Dann ist $\lambda = n\vartheta$. Ab $n\geq 30$ und $\vartheta\leq0.1$ ist dieser Übergtang für die meisten Anwendungen hinreichend genau.
 
@@ -235,6 +244,7 @@ Man erhält die Poissonverteilung auchaus einer Binomialverteilung für kleine $
 $$
 M_{X} = \{1,2,3,... \}\quad\text{und}\quad P(x)=(1-\vartheta)^{x-1}\vartheta
 $$
+
 Dann gilt:
 
 $$
