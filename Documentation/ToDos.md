@@ -66,13 +66,14 @@
 
 * Gegeben sei ein beliebig oft unter gleichen Bedingungen wiederholbares Experiment und $A\in\Omega$ ist ein Ausgang dieses Experiments. Weiters sei $H_{n}(A)$ die Anzahl der Ergebnisse von A bei n Durchführungen als absolute Häufigkeit und $h_{n}(A):=\frac{H_{n}(A)}{n}$ als relative Häufigkeit des Auftretens von A bei n Durchführungen gegeben. Dann zeigt die Folge der $h_{n}(A)$ ein "konvergentartiges" Verhalten.
 
-* Man spricht von einem LaPlace-Modell, wenn aufgrund von Symmetrien alle Ausgänge die gleiche Chance haben. Eines von n möglichen Ausgängen ist dann $\frac{1}{n}$ für alle dieser Ausgänge.
+* Man spricht von einem Laplace-Modell, wenn aufgrund von Symmetrien alle Ausgänge die gleiche Chance haben. Eines von n möglichen Ausgängen ist dann $\frac{1}{n}$ für alle dieser Ausgänge.
 
-* Von einem La Place Hilfsmodell spricht man, wenn sich die Wahrscheinlichkeiten kombinatorische ableiten lassen.
+* Von einem Laplace Hilfsmodell spricht man, wenn sich die Wahrscheinlichkeiten kombinatorische ableiten lassen.
 
 * Das Auftreten von mehreren Ereignissen ist bestimmt durch die Erweiterung der Wahrscheinlichkeitsfunktion mit: $P(E):=\sum_{\omega\in E}P(\omega)$. Somit erhält man eine neue Wahrscheinlichkeitsfunktion: $P:\cal{P}(\omega)\rightarrow [0,1]$, wobei $\cal{P}(\omega)$ die Potenzmenge, also die Menge aller Teilmengen von $\Omega$ bedeutet.
 
 Außerdem gilt folgendes:
+
 $$
 P(\varnothing) = 0\quad P(\Omega) = 1
 $$
