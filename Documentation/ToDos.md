@@ -141,6 +141,7 @@ der Erwartungswert von X.
 $$
 \sigma_{X}^2 = VX=\sum_{x\in M_{X}}P(x)(x-\mu)^2
 $$
+
 die Varianz von X.
 
 * Verschiebungssatz
