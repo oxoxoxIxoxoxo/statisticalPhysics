@@ -58,7 +58,7 @@
 
 ## Wahrscheinlichkeitsmodelle
 
-* Zuordnung der Wahrscheinlichkeiten zu den einzelnen Elementen: Wahrscheinlichkeitsfunktion $P:\Omega \Rightarrow [0,1]$
+* Zuordnung der Wahrscheinlichkeiten zu den einzelnen Elementen: Wahrscheinlichkeitsfunktion $P:\Omega \rightarrow [0,1]$
 
 * Forderung an die Wahrscheinlichkeitsfunktion: $\sum_{\omega\in\Omega}P(\omega) = 1$
 
