@@ -255,5 +255,117 @@ $$
 $$
 
 
-## Kontinuierliche Modelle
+## Stetige Zufallsgrößen und Verteilungen
 
+* Stetige Zufallsgrößen spielen in der Physik eine bedeutende Rolle. Um sie angeben zu können stellt man sich eine diskrete Zufallsgröße vor und lässt die Diskretisierung immer feiner werden. Der Grenzfall bildet eine stetige Funktion, die sogenannte "Dichtefunktion" f oder $\Phi$ mit folgenden Eigenschaften:
+
+$$
+f: M_{X}\rightarrow \mathbb{R}^{+}, \text{integrierbar}
+$$
+
+$$
+\int_{M_{X}}f(x)dx = 1
+$$
+
+$$
+P(\{x\in M_{X}:a\leq x \leq b \}) = \int_{a}^{b}f(x)dx
+$$
+
+* Bemerkung: Da die Wahrscheinlichkeit einer stetigen Verteilung durch ein Integral definiert ist, kann man einem einzelnen Punkt keine Wahrscheinlichkeit mehr zuordnen, sondern nur mehr einem Intervall.
+
+* Definition: Sei X eine stetige (oder diskrete) Zufallsgröße, dann ist die Verteilungsfunktion $F(\xi):= P(\{x\in M_{X}: x\leq\xi \}) \quad \forall \xi \in\mathbb{R}$
+
+Ist X diskret, so ist $F(x)=\sum_{x_{i}\leq x}P(x_{i})$ eine Treppenfunktion.
+
+Ist X stetig, so ist F eine stetige Funktion mit:
+
+$$
+F'(x) = f(x), F(x)=\int_{-\infty}^{x} f(t)dt \text{und es gilt} P(\{x\in M_{X}:a\leq x\leq b \})=F(b)-F(a)
+$$
+
+### Lage und Streuparameter
+
+* $\alpha$-Fraktil $x_{\alpha}$: $F(x_{\alpha})=\alpha$
+
+Sonderfälle:
+
+- 0.5-Fraktil (Median)
+- 0.25-Fraktil (unteres Quartil)
+- 0.75-Fraktil (oberes Quartil)
+
+* Erwartungswert $\langle X\rangle$: In Verallgemeinerung zum diskreten Fall gilt:
+
+$$
+\langle X\rangle = \int_{M_{X}} xf(x)dx
+$$
+
+bzw. für die Funktion einer Zufallsgröße
+
+$$
+\langle g(X)\rangle = \int_{M_{X}} g(x)f(x)dx
+$$
+
+* Varianz $ VX =\sigma^2$: Sie ist ebenfalls analog zum diskreten Fall definiert durch
+
+$$
+VX = \int_{M_{X}} (x-\langle X\rangle)^2f(x)dx
+$$
+
+Ihre positive Wurzel $+\sqrt{VX}=\sigma$ heiß Standardabweichung. Es gilt weiterhin der Verschiebungssatz.
+
+### Stetige Gleichverteilung
+
+* Definition: X heißt stetig gleichverteilt auf $[a, b]$ i.Z. $X\sim S_{a,b}$, wenn
+
+$$
+M_{X}=[a,b] \quad \text{und}\quad f(x)=\frac{1}{b-a}\quad \forall x\in M_{X}
+$$
+
+Dann gilt:
+
+$$
+\langle X\rangle = \frac{a+b}{2},\quad VX=\frac{(b-a)^2}{12}
+$$
+
+Anwendungen: Kontinuierliche Zufallszahlen, usw.
+
+### Exponentialverteilung
+
+* Definition: X heißt exponentialverteilt, i.Z. $X\sim E_{x_{\lambda}}$, wenn
+
+$$
+M_{X}=\mathbb{R}^{+} \quad \text{und}\quad f(x)=\lambda exp(-\lambda x)
+$$
+
+Dann gilt:
+
+$$
+\langle X\rangle =\frac{1}{\lambda},\quad VX=\frac{1}{\lambda^2}
+$$
+
+Es besteht folgender Zusammenhang zur Poisson-Verteilung:
+Ist die Anzahl von Ereignissen in einem Zeitintervall der Länge t verteilt nach $P_{\lambda t}$, so ist die Zeit zwischen den Ereignissen verteilt nach $E_{x_{\lambda}}$
+
+Anwendungen: Lebensdauern, Zerfallszeiten (Radio-Carbon-Datierung), Wartezeiten
+
+### Normalverteilung
+
+* Definition: X heißt standard-normalverteilt, i.Z. $X\sim N(0,1)$, wenn
+
+$$
+M_{X}=\mathbb{R}\quad \text{und}\quad f(x)=\frac{1}{\sqrt{2π}}exp(-\frac{(x-\mu)^2}{2\sigma^2})
+$$
+
+Anwendungen: Die Normalverteilung tritt immer dann auf, wenn sich eine Zufallsgröße aus einer Summe vieler unabhängiger Einflussgrößen ergibt. Z.B.: Messfehler, Abmessungen von Bauteilen, Länge von Grashalmen auf einem Feld, usw. Aber auch z.B. die Antreffwahrscheinlichkeitsdichte $|\psi(x,t)|^2$ eines Teilchens in der Quantenmechanik ist eine Normalverteilung.
+
+# Statistische Tests
+
+## Hypothesen und Tests
+
+## Der Chi-Quadrat-Test
+
+## Der Run-Test
+
+# Messfehler
+
+# Zufallsgeneratoren
