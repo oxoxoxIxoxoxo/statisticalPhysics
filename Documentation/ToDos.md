@@ -24,7 +24,7 @@
 
 * Physik im Experiment
 
-* Skriptum "Fehlerrechnung
+* Skriptum "Fehlerrechnung"
 
 # Protokoll
 
