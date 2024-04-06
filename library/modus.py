@@ -13,4 +13,4 @@ class modus:
 
         a = np.loadtxt(self.path)
         m = mode(a)
-        print(m)
+        print(m, m[0])
