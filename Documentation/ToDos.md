@@ -360,12 +360,140 @@ Anwendungen: Die Normalverteilung tritt immer dann auf, wenn sich eine Zufallsgr
 
 # Statistische Tests
 
+* Basis eines statistischen Tests ist die Entnahme einer Stichprobe.
+
+* Als Schätzwerte werden sog. Maximum-Likelihoor-Schätzer (ML-Schätzer) herangezogen. Für den ML-Schätzer als Parameter muss gelten, dass die Wahrscheinlichkeit des Auftretens des beobachteten Falles maximal ist.
+
+* Die Schätzung von $\vartheta$ eines beobachteten Falles wird meist mit $\hat{\vartheta}$ bezeichnet.
+
+* Gemeinsam mit einem Vertrauens- oder Konfidenzintervalls konstruiert man eine Vorschrift, die angibt, wie "sicher" ein Test bestanden wird.
+
+* Über das Konfidenzintervall beschreibt ein statistischer Test einen Bereich, in dem die geschätzte Annahme mit einer gegebenen Wahrscheinlichkeit zutrifft.
+
 ## Hypothesen und Tests
+
+Wenn über die Verteilung bzw. die Parameter einer Verteilung einer Zufallsgröße eine Behauptung aufgestellt wird, spricht man von einer Hypothese H.
+
+Man formuliert zunächst die sog. Nullhypothese H$_{0}$, die gegen die Gegenhypothese H$_{1}$ gestestet wird.
+
+Ein Test kann dann zu zwei Fehlern führen.
+
+* Fehler 1. Art: Eine richtige Nullhypothese wird verworfen.
+
+* Fehler 2. Art: Eine falsche Nullhypothese wird angenommen.
+
+$\alpha$ ... Bezeichnung für die Wahrscheinlichkeit einen Fehler 1. Art zu begehen
+
+$1-\alpha$  ... Sicherheit des Tests.
+
+Ein Test mit der Sicherheit $\gamma$ für die Hypothese $H:\vartheta = \vartheta_{0}$ ist gegeben durch die Vorschrift:
+
+$I$ sei ein Konfidenzinterval für $H$ mit der Überdeckungswahrscheinlichkeit $\gamma$.
+
+Wenn $\vartheta_{0}\in I$ wird $H$ angenommen, ansonsten verworfen.
+
+Für die Wahrscheinlichkeit, dass $\vartheta$ von $I$ überdeckt wird erhält man den Wert $\gamma$.
+
+Das ergibt sich durch wiederholtes entnehmen von Stichproben, durch das wiederholte Schätzen von $\vartheta$ und durch Konstruktion eines passendes Konfidenzintervalles $I$. So kann man sagen, dass in $100\cdot\gamma \%$ der Fälle der tatsächlich geschätzte Wert des geschätzten Parameters $\vartheta$ im Intervall $I$ liegt. 
+
+Je höher die Sicherheit gewählt wird, desto unwahrscheinlicher wird ein Fehler erster Art ausfallen.
+
+Für normale Größen und die Hypothese $\mu = \mu_{0}$ gilt folgende Konstruktionsvorschrift für ein Konfidenzintervall:
+
+sind
+$
+X_{i} i = 1,...,n
+$
+ paarweise unabhängig und verteilt nach $N(\mu, \sigma^2)$ mit unbekanntem $\mu$ und unbekanntem $\sigma$ so ist das Konfidenzintervall für ein geschätztes $\hat{\mu} = \overline{x}$, dem Mittelwert der Stichprobe mit Umfang n, mit der Überdeckungswahrscheinlichkeit $\gamma$ gegeben durch:
+
+$$
+I = [\overline{x}\pm t_{n-1;\frac{1+\gamma}{2}}\frac{s}{\sqrt{n}}]
+$$
+
+wobei $t_{n-1;\frac{1+\gamma}{2}}$ das $\frac{1+\gamma}{2}$-Fraktil der sog. Student-Verteilung mit Freiheitsgrad $n-1$ und $s=\sqrt{\frac{1}{n-1}\sum_{i}(x_{i}-\overline{x})^2}$, die Stichprobenstandardabweichung ist.
+
 
 ## Der Chi-Quadrat-Test
 
+* Gehört zur Klasse der Anpassungstests
+
+* Fragestellung: Entstammt eine Stichprobe einer bestimmt Verteilung
+
+### Chi-Quadrat-Verteilung
+
+Sind die $X_{i} i=1,...,n$ alle paarweise unabhängig und verteilt nach $N(0,1)$, so ist die Zufallsgröße
+
+$$
+Y = \sum_{i=1}^{n}X_{i}^{2} \sim \chi_{n}^2
+$$
+
+$\chi_{n}^2$ ... Chi-Quadrat-Verteilung mit n Freiheitsgraden. Freiheitgrade entsprechen der Anzahl der unabhängigen Größen, die zur Bildung verwendet wurden.
+
+* Tabelle zur Auswertung des Chi-Tests:
+
+| Daten    | Häufigkeit | Wahrscheinlichkeit | erw. Häufigkeit  | Abweichung    | Testgröße                      |
+| -------- | ---------- | ------------------ | ---------------- | ------------- | ------------------------------ |
+| $x_{i}$  | $y_{i}$    | $p(x_{i})$         | $e_{i}=np(x_{i}) | $y_{i}-e_{i}$ | $\frac{(y_{i}-e_{i})^2}{e_{i}} |
+| $\vdots$ | $\vdots$   | $\vdots$           | $\vdots$         | $\vdots$     | $\vdots$ |
+
+Man kann annehmen, dass die Abweichungen normalverteilt sind und die Division durch eine Konstante daran nichts ändert. Unter der Annahme, dass die Daten tatsächlich aus der angenommenen Verteilung entstammen, gilt:
+
+$$
+\sum_{i=1}^{k}\frac{(y_{i}-e_{i})^2}{e_{i}}=\chi^2
+$$
+
+ist näherungsweise verteilt nach $\chi_{k-1}^2$
+
 ## Der Run-Test
 
-# Messfehler
+* Der Run-Test ist ein parameterfreier Test.
 
+* Der Run-Test ist ein Test, der zu bestimmen versucht, ob die Daten korreliert sind.
+
+Bestimmung des Medians der Stichprobe:
+
+$$
+m = \begin{cases}x_{i} & \text{mit} \quad i=\big(\frac{n+1}{2} \big) &\text{n ungerade} \\ \frac{x_{j}+x_{\ell}}{2} & \text{mit} \quad j=\big(\frac{n}{2}+1 \big), \ell = \big(\frac{n}{2} \big) & \text{n gerade}\end{cases}
+$$
+
+Nun bildet man eine Folge mit 1 und 0, an der i-ten Stelle für $x_{i}>m$ bzw. 0, wenn $x_{i}<m$ steht.
+
+* Eine Unterfolge von gleichen Zahlen heißt Run. Die Gesamtzahl R dieser Runs wird gezählt.
+
+* Wäre die beobachtete Probe aus unabhängigen Beobachtungen entstanden, so wäre die Anzahl der Runs näherungsweise normalverteilt mit:
+
+$$
+\langle R\rangle = \frac{n}{2}+1;\quad VR=\frac{n-1}{4}
+$$
+
+* Der P-Wert, $P(\{x\in\mathbb{R}: x\leq R \})=F(R)$ ergibt sich aus der Normalverteilung $N(\langle R\rangle,VR)$ bei einem Test der Hypothese Unabhängigkeit gegen die Alternative positive Korrelation (weniger Runs).
+
+* Der P-Wert ist das Integral $\int_{0}^{R} f(x)dx$ $(f(x):\text{Dichtefunktion})$ und gibt die Wahrscheinlichkeit an, mit der bei diesen Test-Parametern $(\langle R\rangle, VR)$ weniger oder gleich viele Runs entstehen, unter der Voraussetzung, dass die Daten nicht korreliert sind.
+
+* Man kann den Test noch zusätzlich verschärfen, indem man die Differenz aufeinanderfolgender Stichproben-Werte betrachtet. 
+
+$$
+MQD = \frac{1}{n-1}\sum_{i=2}^{n}(x_{i}-x_{i-1})^2
+$$
+
+* Gilt Unabhängigkeit, dann gilt auch $\langle MQD\rangle = 2VX$.
+
+* Wir schätzen $VX$ mit der Stichprobenvarianz $s^2$ und bilden $d = \frac{MQD}{s^2}$. Es gilt d ist näherungsweise normalverteilt mit
+
+$$
+\langle d \rangle = 2, \quad Vd =\frac{n-2}{n^2}
+$$
+
+
+
+# Messfehler
+**EXPERIMENTALPHYSIK1**
+
+**SKRIPTUM_FEHLERRECHNUNG**
+
+unbeding durchlesen!
 # Zufallsgeneratoren
+
+* Gängige Methoden, um zu Zufallszahlen zu kommen ist unter anderem das Rauschen oder radioaktive Zerfälle.
+
+
