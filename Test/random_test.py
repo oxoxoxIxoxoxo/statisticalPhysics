@@ -5,5 +5,5 @@ sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 from library.random_nb import random_nb as rnb
 
-a = rnb(100, 10)
-print(a)
+a = rnb(50,1000)
+print(a.random_nb())
