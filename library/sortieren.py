@@ -9,7 +9,7 @@ class sortieren:
             for j in range(n-1):
                 if self.a[j]>self.a[j+1]:
                     self.a[j+1],self.a[j] = self.a[j],self.a[j+1]
-                    print(i,j,self.a)
+                    #print(i,j,self.a)
         return self.a
     
     def selectionSort(self):
@@ -20,5 +20,5 @@ class sortieren:
                 if self.a[j]<self.a[k]:
                     k=j
                     self.a[i],self.a[k] = self.a[k],self.a[i]
-                    print(i,j,self.a)
+                    #print(i,j,self.a)
         return self.a
