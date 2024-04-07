@@ -13,4 +13,4 @@ class modus:
 
         a = np.loadtxt(self.path)
         m = mode(a)
-        print(m, m[0])
+        print("Die Masse %sg kommt %s mal vor" %(m[0][0], m[1][0]))
