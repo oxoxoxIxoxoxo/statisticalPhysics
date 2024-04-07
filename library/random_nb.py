@@ -24,20 +24,21 @@ class random_nb:
         s = 1
         x = np.random.normal(self.sw, s, size = self.n)
         a = np.around(x,decimals=1)
-        print("cur_dir: ",os.getcwd())
+        #print("cur_dir: ",os.getcwd())
         try:
             os.mkdir(path)
         except:
             os.chdir(path)
-        np.savetxt("daten.txt", a, fmt='%2.1f')
+        #np.savetxt("daten.txt", a, fmt='%2.1f')
 
-        print("cur_dir: ",os.getcwd())
-        b = np.loadtxt("daten.txt")
-        print("Gespeicherte Messwerte ")
-        print(a[:self.n//20])
-        print("Messwerte auslesen")
-        print(b[:self.n//20])
-        os.chdir(cur_path)
-        print("cur_dir: ",os.getcwd())
+        #print("cur_dir: ",os.getcwd())
+        #b = np.loadtxt("daten.txt")
+        #print("Gespeicherte Messwerte ")
+        #print(a[:self.n//20])
+        #print("Messwerte auslesen")
+        #print(b[:self.n//20])
+        #os.chdir(cur_path)
+        #print("cur_dir: ",os.getcwd())
+        return a
 
         
